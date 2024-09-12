@@ -18,11 +18,11 @@
 
 ## Guia de uso
 
-| class    | descrip    | uso                      |
-| -------- | ---------- | ------------------------ |
-| button   | solo texto | class="button"           |
-| text     | solot text | class="button text"      |
-| text_con | ...        | class="button text_icon" |
+| class     | descrip    | uso                   |
+| --------- | ---------- | --------------------- |
+| btn       | solo texto | class="btn"           |
+| text      | solot text | class="btn text"      |
+| text_icon | ...        | class="btn text_icon" |
 
 JS
 
