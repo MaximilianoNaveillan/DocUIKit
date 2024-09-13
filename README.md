@@ -18,11 +18,11 @@
 
 ## Guia de uso
 
-| class     | descrip    | uso                   |
-| --------- | ---------- | --------------------- |
-| btn       | solo texto | class="btn"           |
-| text      | solot text | class="btn text"      |
-| text_icon | ...        | class="btn text_icon" |
+| class               | descrip                           | uso                             |
+| ------------------- | --------------------------------- | ------------------------------- |
+| btn                 | botón simple de texto             | class="btn"                     |
+| btn-primary-lighten | botón de color primário aligerado | class="btn btn-primary-lighten" |
+| text_icon           | ...                               | class="btn text_icon"           |
 
 JS
 
