@@ -1,0 +1,53 @@
+.container_alert {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  animation-name: showbottom;
+  animation-duration: 0.8s;
+}
+@keyframes showbottom {
+  0% {
+    /* top: 100%; */
+    background-color: transparent;
+  }
+  50% {
+    /* top: 0%; */
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 200%;
+  }
+  100% {
+    padding-top: 0px;
+  }
+}
+
+.content_alert {
+  margin: auto;
+  background-color: #fff;
+  width: 400px;
+
+  border-radius: 0.2rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+  animation-name: show;
+  animation-duration: 0.4s;
+}
+@keyframes show {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.container_alert_close {
+  display: none !important;
+}
+
+.container_alert_open {
+  display: flex !important;
+}
