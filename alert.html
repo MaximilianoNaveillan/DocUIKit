@@ -11,23 +11,25 @@
   </head>
   <body>
     <main>
+      <div class="content-btn">
+        <button onclick="openDialog('container_alert1')" class="btn">
+          <span>open</span>
+        </button>
+      </div>
       <div
-        class="container_alert container_alert_open"
+        class="container_alert container_alert_close"
         id="container_alert1"
         onclick="closeDialog('container_alert1')"
       >
-        <div class="content_alert" onclick="stopPropagation(event)">
+        <div class="content_alert full_width" onclick="stopPropagation(event)">
           <!-- COMPONENTE CARD -->
-          <div class="card" style="height: 400px; max-height: 400px">
+          <div class="card" style="height: 100%; max-height: 100%">
             <div class="card_title">Título</div>
             <div class="card_text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
               nostrum quia. Rem adipisci excepturi eaque dolorum magni sint
               natus veritatis alias blanditiis molestiae eius, laborum, beatae,
-              rerum sequi iusto magnam.Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Quaerat, nostrum quia. Rem adipisci excepturi
-              eaque dolorum magni sint natus veritatis alias blanditiis
-              molestiae eius, laborum, beatae, rerum sequi iusto magnam.
+              rerum sequi iusto magnam.
             </div>
             <div class="card_section">
               <button
@@ -40,11 +42,6 @@
           </div>
           <!-- ... -->
         </div>
-      </div>
-      <div class="content-btn">
-        <button onclick="openDialog('container_alert1')" class="btn">
-          <span>open</span>
-        </button>
       </div>
     </main>
     <script>

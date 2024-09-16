@@ -33,6 +33,11 @@
   animation-name: show;
   animation-duration: 0.4s;
 }
+/* full width para la card de carga de archivos, si queremos alto y ancho especifico se cambia en el style de html */
+.full_width {
+  width: calc(100% - 60px) !important;
+  height: calc(100% - 60px) !important;
+}
 @keyframes show {
   0% {
     opacity: 0%;
@@ -44,6 +49,7 @@
     opacity: 100%;
   }
 }
+
 .container_alert_close {
   display: none !important;
 }
