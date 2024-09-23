@@ -19,12 +19,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
+  min-width: 0;
 }
 html,
 body {
   height: 100%;
   width: 100%;
+}
+body {
   font: 100% sans-serif;
+  min-height: 100dvh;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
 }
 main {
   height: 100%;
