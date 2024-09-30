@@ -2,6 +2,10 @@ header {
   background-color: var(--primary-color);
   color: #f1f1f1;
   padding: 15px;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.2);
 }
 nav {
   display: flex;
@@ -18,13 +22,14 @@ nav > input[type="checkbox"] {
 #drawer {
   position: fixed;
   top: 0;
-  left: -300px;
+  left: -320px;
   background: var(--primary-color);
   height: 100%;
   width: 300px;
   max-width: 300px;
   transition: left 0.5s ease;
   z-index: 3;
+  box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.1);
 }
 #drawer_overlay {
   position: absolute;
@@ -52,7 +57,7 @@ nav > input[type="checkbox"] {
   height: 100%;
   background-color: var(--primary-color);
   color: #f1f1f1;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: block;
@@ -61,6 +66,24 @@ main {
   width: calc(100% - 300px);
   max-width: calc(100% - 300px);
   margin-left: 300px;
+}
+.vertical_list {
+  display: block;
+  padding: 15px;
+  list-style-type: none;
+  margin: 60px 0px 0px 0px;
+  padding: 0;
+  align-items: center;
+}
+.vertical_list > li > a {
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+.vertical_list > li > a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 @media only screen and (max-width: 1000px) {
   #sidebar {
