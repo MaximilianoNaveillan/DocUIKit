@@ -19,16 +19,17 @@ El siguiente código crea un campo de texto con una etiqueta descriptiva. La eti
 
 HTML
 
-html
+```HTML
 <div class="textfield">
   <input name="nombre" id="nombre" type="text" placeholder="Nombre" />
   <label for="nombre">Nombre</label>
 </div>
+```
 
 
 JSX
 
-JSX
+```JSX
 import "./FormStyle.css";
 
 function InputField() {
@@ -43,11 +44,11 @@ function InputField() {
 }
 
 export default InputField;
-
+```
 
 CSS
 
-css
+```CSS
 .textfield {
   position: relative;
   width: 100%;
@@ -103,7 +104,7 @@ css
 .texfield_outlined input:focus {
   border: 2px solid var(--primary-color);
 }
-
+```
 
 # Componente: "Textarea"
 
@@ -126,7 +127,7 @@ Es un elemento que permite a los usuarios escribir y editar texto en varias lín
 
 HTML
 
-html
+```HTML
 <div class="textfield">
   <textarea
     name="c"
@@ -137,11 +138,11 @@ html
   ></textarea>
   <label for="comentario">Comentario</label>
 </div>
-
+```
 
 CSS
 
-css
+```CSS
 .textfield textarea::placeholder {
   opacity: 0;
 }
@@ -192,6 +193,7 @@ css
 .texfield_outlined textarea:focus {
   border: 2px solid var(--primary-color);
 }
+```
 
 
 ## checkbox
@@ -216,11 +218,12 @@ La clase checkbox agrupa los elementos y aplica estilos CSS específicos para lo
 
 ### Plantilla de ejemplo
 
-HTML
+```html
 <div class="checkbox primary">
-<input type="checkbox" name="checkbox" id="checkbox1">
-<label for="checkbox1">checkbox 1</label>
+  <input type="checkbox" name="checkbox" id="checkbox1">
+  <label for="checkbox1">checkbox 1</label>
 </div>
+```
 
 
 - div: en el div de ir la clase
@@ -240,7 +243,7 @@ El componente Tabla es una estructura de datos organizada en filas y columnas qu
 
 HTML
 
-HTML
+```html
  <div class="container">
       <table class="table">
         <thead>
@@ -269,6 +272,7 @@ HTML
         </tbody>
       </table>
     </div>
+```
 
 
 - *`table`*: Permitiendo organizar los datos en un formato tabular.
@@ -277,7 +281,8 @@ HTML
 
 CSS
 
-CSS
+
+```CSS
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -322,6 +327,7 @@ CSS
   background-color: #f1f1f1;
   cursor: pointer;
 }
+```
 
 
 - *Efectos visuales*: Se usan colores alternados en las filas y un cambio de fondo cuando el usuario interactúa con ellas, además de destacar una fila activa con la clase active-row.
