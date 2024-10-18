@@ -41,21 +41,59 @@
 HTML
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alert</title>
-    <link rel="stylesheet" href="/public/alert.css" />
-    <link rel="stylesheet" href="/public/global.css" />
-  </head>
-  <body>
-    <main>
-      <div class="container">Alert</div>
+<div
+        class="container_alert container_alert_open"
+        id="container_alert1"
+        onclick="closeDialog('container_alert1')"
+      >
+        <div class="content_alert" onclick="stopPropagation(event)">
+          <!-- COMPONENTE CARD -->
+          <div class="card" style="height: 400px; max-height: 400px">
+            <div class="card_title">Título</div>
+            <div class="card_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+              nostrum quia. Rem adipisci excepturi eaque dolorum magni sint
+              natus veritatis alias blanditiis molestiae eius, laborum, beatae,
+              rerum sequi iusto magnam.Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quaerat, nostrum quia. Rem adipisci excepturi
+              eaque dolorum magni sint natus veritatis alias blanditiis
+              molestiae eius, laborum, beatae, rerum sequi iusto magnam.
+            </div>
+            <div class="card_section">
+              <button
+                class="btn btn_small btn_secondary_lighten"
+                onclick="closeDialog('container_alert1')"
+              >
+                <span> Cerrar </span>
+              </button>
+            </div>
+          </div>
+          <!-- ... -->
+        </div>
+      </div>
+      <div class="content-btn">
+        <button onclick="openDialog('container_alert1')" class="btn">
+          <span>open</span>
+        </button>
+      </div>
     </main>
-  </body>
-</html>
+    <script>
+      function openDialog(status) {
+        var el = document.querySelector(`#${status}`);
+        console.log(el);
+        el.classList.remove("container_alert_close");
+        el.classList.add("container_alert_open");
+      }
+      function closeDialog(status) {
+        var el = document.querySelector(`#${status}`);
+        console.log(el);
+        el.classList.remove("container_alert_open");
+        el.classList.add("container_alert_close");
+      }
+      function stopPropagation(event) {
+        event.stopPropagation();
+      }
+    </script>
 ```
 
 CSS
